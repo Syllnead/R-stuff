@@ -16,7 +16,7 @@ cacheSolve <- function(x, ...) {                        ## cacheSolve finds the 
          InvM <- x$getsolve()
          if(!is.null(InvM)) {
                         return(InvM)
-                                }                       ## Final output
+                                }                       ## Final output of the InvM
   data <- x$get()
   InvM <- solve(data, ...)
   x$setsolve(InvM)
